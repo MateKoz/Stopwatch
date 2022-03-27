@@ -54,12 +54,12 @@ h1 {
     font-weight: lighter;
 }
 
-.stopwatch {
+.time {
     font-size: 72px;
     color: var(--first-color);
 }
 
-.time {
+.stopwatch {
     visibility: hidden;
     color: var(--second-color);
     font-size: 22px;
@@ -147,7 +147,7 @@ button:hover, button:focus {
 }
 
 .modal .close:hover {
-    background-color: rgb(226, 36, 26);
+    background-color: rgb(166, 103, 3);
 }
 
 .modal-animation {
