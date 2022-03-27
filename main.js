@@ -7,9 +7,10 @@ const historyBtn = document.querySelector(`.history`)
 const stopwatch = document.querySelector(`.stopwatch`)
 const time = document.querySelector(`.time`)
 const timeList = document.querySelector(`.time-list`)
-const infoBtn = document.querySelector(`.info`)
+const infoBtn = document.querySelector(`.fa-question `)
 const showInfo = document.querySelector(`.modal-shadow`);
-const closeInfo = document.querySelector(`.close`)
+const closeInfo = document.querySelector(`.close`);
+const changeColor = document.querySelector(`.fa-palette`)
 
 //FUNKCJA, KTORA WLACZA  I WYŁACZA MODAL Z INFORMACJAMI
 const showModal = () => {
@@ -101,7 +102,20 @@ const showHistory = () => {
     })
 }
 
+let root = document.documentElement
+
+//FUNKCJA ZMIENIAJACA KOLOR APLIKACJI NA LOSOWY PO KLIKNIECIU IKONY PALETTE
+const changeColors = () => {
+    let a = Math.floor(Math.random()*255)
+    let b = Math.floor(Math.random()*255)
+    let c = Math.floor(Math.random()*255)
+    root.style.setProperty('--first-color', `rgb(${a}, ${b}, ${c})`)
+}
+
+
 //NASLUCHIWANIA
+
+changeColor.addEventListener('click', changeColors)
 historyBtn.addEventListener('click', showHistory)
 closeInfo.addEventListener('click', showModal)
 resetBtn.addEventListener('click', handleReset)

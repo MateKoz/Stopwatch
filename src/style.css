@@ -5,8 +5,8 @@
 }
 
 :root {
-    --first-color: #ffb03b;
-    --second-color: #D2C7BE
+    --first-color: rgb(255, 176, 59);
+    --second-color: rgb(210, 199, 190)
 }
 
 body {
@@ -44,7 +44,7 @@ body {
     transition: color .3s;
 }
 
-.info:hover {
+.info span:hover {
     color: var(--first-color);
 }
 
