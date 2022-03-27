@@ -46,7 +46,7 @@ const handleStart = () => {
             seconds = 0
             time.textContent = `${minutes}:00`
         }
-    }, 100)
+    }, 1000)
 }
 
 //FUNKCJA PAUZUJACA ODLICZANIE, POPRZEZ ZATRZYMANIE SETINTERVAL
